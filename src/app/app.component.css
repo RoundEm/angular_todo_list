@@ -1,19 +1,37 @@
 input {
-    height: 30px;
     width: 40%;
     font-size: 1.2em;
-    padding: 2px;
+    padding: 4px 8px;
+    border: 1px solid grey;
 }
 button {
-    padding: 3px;
+    padding: 4px;
     margin-left: 5px;
     width: 60px;
     font-size: 1.2em;
+    border: 1px solid grey;
 }
 li {
     font-size: 1.45em;
-    margin-top: 7px;
+    margin: 15px auto;
+    width: 60%;
+    list-style-type: none;
 }
 .strikethrough {
     text-decoration: line-through;
+    color: #179b99;
 }
+#clear-btn {
+    width: 100px;
+    margin-top: 35px;
+}
+button:hover, #todoList:hover {
+    cursor: pointer;
+    /* border: 1px solid rgb(191, 242, 242); */
+}
+button:hover, button:focus {
+     background-color: #afdddd;
+ }
+ .hidden {
+     visibility: hidden; 
+ }

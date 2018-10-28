@@ -17,13 +17,17 @@ export class AppComponent {
       completed: false
     })
     this.input = '';
-    console.log('todoItems: ', this.todos)
+    document.getElementById('todo-input').focus()
   }
 
   onInputChange(event: Event) {
     this.input = (<HTMLInputElement>event.target).value;
   }
   
+  clearTodos() {
+    this.todos = []
+  }
+
   toggleItemComplete(event: Event) {
     let todos = this.todos
     let targetId = +(<HTMLUListElement>event.target).id
@@ -34,13 +38,13 @@ export class AppComponent {
       }
     }
 
-    // REMOVE ITEMS:
+    // YOU CAN USE ONE OF THESE IF YOU'D RATHER DELETE ITEMS INSTEAD OF TOGGLE:
+
     // this.todos = this.todos.filter(todo => {
     //   return todo.id !== targetId
     // })
 
     // for (let i = 0; i < this.todos.length; i++) {
-    //   console.log('ID: ', this.todos[i].id)
     //   if (this.todos[i].id === targetId) {
     //     return this.todos.splice(i, 1)
     //   }
