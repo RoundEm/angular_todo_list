@@ -1,0 +1,19 @@
+input {
+    height: 30px;
+    width: 40%;
+    font-size: 1.2em;
+    padding: 2px;
+}
+button {
+    padding: 3px;
+    margin-left: 5px;
+    width: 60px;
+    font-size: 1.2em;
+}
+li {
+    font-size: 1.45em;
+    margin-top: 7px;
+}
+.strikethrough {
+    text-decoration: line-through;
+}
